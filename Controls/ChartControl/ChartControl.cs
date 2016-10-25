@@ -17,31 +17,25 @@ namespace TM.Controls.ChartControl
         /// 私有系列集合
         /// </summary>
         private TSeriesCollection series;
-        [Description("构成报表的重要数据来源"),Category("序列集合")]
+        [Description("序列集合"),Category("报表属性")]
         public TSeriesCollection Series { get { return series; } }
         /// <summary>
         /// Y轴上的刻度数
         /// </summary>
         private int yPoints;
-        [Description("根据此数+数据最大值来构建Y轴上刻度点"), Category("Y轴上的刻度数")]
+        [Description("Y轴上的刻度个数"), Category("报表属性")]
         public int YPoints
         {
             get { return yPoints; }
             set { yPoints = value; }
         }
-        /// <summary>
-        /// 是否显示Y轴上的值百分比
-        /// </summary>
-        public bool IsShowYPercent;
-        /// <summary>
-        /// 是否显示关联线，每个序列的最后一个点，和图例中所对应的矩形通过关联线连接
-        /// </summary>
+        [Description("是否显示关联线，每个序列的最后一个点，和图例中所对应的矩形通过关联线连接"), Category("报表属性")]
         public bool IsShowAssociation;
         /// <summary>
         /// 数据源
         /// </summary>
         private DataTable dataSource;
-        [Description("报表的数据源"), Category("数据源")]
+        [Description("报表的数据源"), Category("报表属性")]
         public DataTable DataSource
         {
             get { return this.dataSource; }
@@ -67,38 +61,24 @@ namespace TM.Controls.ChartControl
                 }
             }
         }
-        /// <summary>
-        /// 序列字段名
-        /// </summary>
-        public string SeriesFieldName;
-        /// <summary>
-        /// 绑定的文字信息（名称）(坐标X轴)
-        /// </summary>
-        public string SeriesArgumentDataMember;
-        /// <summary>
-        /// 绑定的值（数据）(坐标Y轴)
-        /// </summary>
-        public string SeriesValueDataMember;
-        /// <summary>
-        /// 绑定的目标值（数据）(坐标Y轴)
-        /// </summary>
-        public string SeriesTargetValueDataMember;
-        /// <summary>
-        /// 报表名称
-        /// </summary>
-        public string ChartName;
-        /// <summary>
-        /// 是否显示报表名称
-        /// </summary>
-        public bool IsShowChartName = true;
-        /// <summary>
-        /// 序列点的ID
-        /// </summary>
-        public string SeriesPointID;
-        /// <summary>
-        /// 序列点的Name
-        /// </summary>
-        public string SeriesPointName;
+        [Description("序列字段名"), Category("报表属性")]
+        public string SeriesFieldName { get; set; }
+        [Description("绑定的文字信息（名称）(坐标X轴)"), Category("报表属性")]
+        public string SeriesArgumentDataMember { get; set; }
+        [Description("绑定的值（数据）(坐标Y轴)"), Category("报表属性")]
+        public string SeriesValueDataMember { get; set; }
+        [Description("绑定的目标值（数据）(坐标Y轴)"), Category("报表属性")]
+        public string SeriesTargetValueDataMember { get; set; }
+        [Description("报表名称"), Category("报表属性")]
+        public string ChartName { get; set; }
+        [Description("是否显示报表名称"), Category("报表属性")]
+        public bool IsShowChartName { get; set; }
+        [Description("序列点的ID"), Category("报表属性")]
+        public string SeriesPointID { get; set; }
+    [Description("序列点的Name"), Category("报表属性")]
+        public string SeriesPointName { get; set; }
+        [Description("是否显示Y轴值的百分比"), Category("报表属性")]
+        public bool IsShowYPercent { get; set; }
         #endregion 属性
         #region 参数
         /// <summary>
@@ -241,6 +221,8 @@ namespace TM.Controls.ChartControl
             yPoints = 10;
 
             IsShowYPercent = true;
+
+            IsShowChartName = true;
 
         }
         /// <summary>

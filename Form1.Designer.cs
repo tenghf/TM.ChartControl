@@ -33,10 +33,19 @@
             // 
             // chartControl1
             // 
+            this.chartControl1.ChartName = null;
             this.chartControl1.DataSource = null;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.IsShowChartName = true;
+            this.chartControl1.IsShowYPercent = false;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesArgumentDataMember = null;
+            this.chartControl1.SeriesFieldName = null;
+            this.chartControl1.SeriesPointID = null;
+            this.chartControl1.SeriesPointName = null;
+            this.chartControl1.SeriesTargetValueDataMember = null;
+            this.chartControl1.SeriesValueDataMember = null;
             this.chartControl1.Size = new System.Drawing.Size(1080, 522);
             this.chartControl1.TabIndex = 0;
             this.chartControl1.YPoints = 10;
