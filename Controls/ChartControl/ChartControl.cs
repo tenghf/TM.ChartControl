@@ -30,7 +30,7 @@ namespace TM.Controls.ChartControl
             set { yPoints = value; }
         }
         [Description("是否显示关联线，每个序列的最后一个点，和图例中所对应的矩形通过关联线连接"), Category("报表属性")]
-        public bool IsShowAssociation;
+        public bool IsShowAssociation { get; set; }
         /// <summary>
         /// 数据源
         /// </summary>
@@ -75,7 +75,7 @@ namespace TM.Controls.ChartControl
         public bool IsShowChartName { get; set; }
         [Description("序列点的ID"), Category("报表属性")]
         public string SeriesPointID { get; set; }
-    [Description("序列点的Name"), Category("报表属性")]
+        [Description("序列点的Name"), Category("报表属性")]
         public string SeriesPointName { get; set; }
         [Description("是否显示Y轴值的百分比"), Category("报表属性")]
         public bool IsShowYPercent { get; set; }

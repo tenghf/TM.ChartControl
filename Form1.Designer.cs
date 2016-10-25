@@ -36,6 +36,7 @@
             this.chartControl1.ChartName = null;
             this.chartControl1.DataSource = null;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.IsShowAssociation = true;
             this.chartControl1.IsShowChartName = true;
             this.chartControl1.IsShowYPercent = false;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
