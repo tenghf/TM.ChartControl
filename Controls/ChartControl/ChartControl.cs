@@ -37,10 +37,11 @@ namespace TM.Controls.ChartControl
         /// 是否显示关联线，每个序列的最后一个点，和图例中所对应的矩形通过关联线连接
         /// </summary>
         public bool IsShowAssociation;
-        private DataTable dataSource;
         /// <summary>
-        /// 数据表
+        /// 数据源
         /// </summary>
+        private DataTable dataSource;
+        [Description("报表的数据源"), Category("数据源")]
         public DataTable DataSource
         {
             get { return this.dataSource; }

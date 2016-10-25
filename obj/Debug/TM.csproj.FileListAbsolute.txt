@@ -10,7 +10,6 @@ F:\TPrograms\TM.ChartControl\obj\Debug\TM.ChartControl.exe
 F:\TPrograms\TM.ChartControl\obj\Debug\TM.ChartControl.pdb
 F:\TPrograms\TM.ChartControl\bin\Debug\TM.ChartControl.exe
 F:\TPrograms\TM.ChartControl\bin\Debug\TM.ChartControl.pdb
-F:\TPrograms\TM.ChartControl\obj\Debug\TM.csprojResolveAssemblyReference.cache
 F:\TPrograms\TM.ChartControl\obj\Debug\TM.Controls.ChartControl.ChartControl.resources
 F:\TPrograms\TM.ChartControl\obj\Debug\TM.Form1.resources
 F:\TPrograms\TM.ChartControl\obj\Debug\TM.ChartControl.Properties.Resources.resources
