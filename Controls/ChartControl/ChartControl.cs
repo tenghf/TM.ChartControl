@@ -26,8 +26,8 @@ namespace TM.Controls.ChartControl
         [Description("根据此数+数据最大值来构建Y轴上刻度点"), Category("Y轴上的刻度数")]
         public int YPoints
         {
-            get {return yPoints; }
-            set { yPoints=value; }
+            get { return yPoints; }
+            set { yPoints = value; }
         }
         /// <summary>
         /// 是否显示Y轴上的值百分比
@@ -237,7 +237,7 @@ namespace TM.Controls.ChartControl
 
             IsShowAssociation = true;
 
-            YPoints = 10;
+            yPoints = 10;
 
             IsShowYPercent = true;
 
@@ -485,10 +485,10 @@ Color.FromArgb(170,72,36),Color.FromArgb(13,151,12),Color.FromArgb(179,180,0),Co
         /// </summary>
         private void DrawYPoints(float maxYValue)
         {
-            YOneStepValue = maxYValue / YPoints;
-            YOneStep = YLength*0.8F / YPoints;
+            YOneStepValue = maxYValue / yPoints;
+            YOneStep = YLength*0.8F / yPoints;
             int steps = 1;
-            for (int i = 0; i < YPoints; i++)
+            for (int i = 0; i < yPoints; i++)
             {
                 float y = intersection.Y - YOneStep * steps;
                 //画点
